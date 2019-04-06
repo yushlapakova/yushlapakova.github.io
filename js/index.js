@@ -1,6 +1,7 @@
 var quest = document.getElementsByClassName('quest');
 
 var answer = document.getElementsByClassName('answer');
+var description = document.getElementsByClassName('description');
 var check = document.getElementsByName("q1");
 var q2 = document.getElementsByName("q2");
 var q3 = document.getElementsByName("q3");
@@ -19,6 +20,10 @@ for (var i = 0; i < btns.length; i++) {
         check[i].setAttribute("disabled", "disabled");
       }
       if(check[i].checked) {
+        check[0].checked = true;
+        check[0].parentNode.classList.add('show');
+        check[2].checked = true;
+        check[2].parentNode.classList.add('show');
         check[i].parentNode.classList.add('show');
         btns[0].classList.remove('control');
         btns[1].classList.add('next');
@@ -55,7 +60,20 @@ btns[4].onclick = function() {
       q3[i].setAttribute("disabled", "disabled");
     }
     if(q3[i].checked) {
+      q3[0].checked = true;
+      q3[0].parentNode.classList.add('show');
+      q3[1].checked = true;
+      q3[1].parentNode.classList.add('show');
+      q3[3].checked = true;
+      q3[3].parentNode.classList.add('show');
+      q3[6].checked = true;
+      q3[6].parentNode.classList.add('show');
+      q3[8].checked = true;
+      q3[8].parentNode.classList.add('show');
+      q3[9].checked = true;
+      q3[9].parentNode.classList.add('show');
       q3[i].parentNode.classList.add('show');
+      description[0].classList.add('show');
       btns[4].classList.remove('control');
       btns[5].classList.add('next');
     }
