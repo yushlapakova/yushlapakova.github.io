@@ -294,12 +294,6 @@ a.link {
   margin-bottom: 8px;
 }
 
-/* .checkbox__check {
-  position: relative;
-  display: flex;
-  align-items: center;
-} */
-
 input[type="checkbox"],
 input[type="radio"] {
   position: absolute;
@@ -398,7 +392,7 @@ label::before {
 
 @media (max-width:768px) {
   .q3-wrapper {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
