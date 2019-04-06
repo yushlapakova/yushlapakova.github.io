@@ -46,6 +46,7 @@ a {
 }
 
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -122,6 +123,14 @@ header i {
 @media (max-width: 768px) {
   header i {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  header i {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
