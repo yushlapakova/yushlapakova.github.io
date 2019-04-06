@@ -276,7 +276,7 @@ a.link {
 
 @media(max-width:414px) {
   .ask input {
-    max-width: auto;
+    max-width: 100%;
   }
 }
 
