@@ -159,6 +159,14 @@ a.link {
 	-webkit-transition: transform 0.1s, border-bottom 0.1s;
 }
 
+@media(max-width:414px) {
+  .action-button{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
 .action-button:active
 {
 	transform: translate(0px,4px);
@@ -212,6 +220,12 @@ a.link {
   margin: 20px 0;
 }
 
+@media(max-width: 320px) {
+  .ask table {
+    min-width: auto;
+  }
+}
+
 .ask .red {
   color: #f44336;
 }
@@ -248,14 +262,16 @@ a.link {
 }
 
 .ask input {
-  height: 35px;
-  width: 300px;
+  height: 42px;
+  width: 100%;
+  max-width: 300px;
   padding: 0 8px;
   margin-top: 5px;
   font-size: 14px;
   border: 2px solid #cccccc;
   border-radius: 6px;
   outline: none;
+  box-sizing: border-box;
 }
 
 .ask input.false{
