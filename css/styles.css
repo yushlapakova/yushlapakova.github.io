@@ -274,6 +274,12 @@ a.link {
   box-sizing: border-box;
 }
 
+@media(max-width:414px) {
+  .ask input {
+    max-width: auto;
+  }
+}
+
 .ask input.false{
   border-color: #ffc7c2;
 }
