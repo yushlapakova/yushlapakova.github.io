@@ -428,7 +428,7 @@ label::before {
 }
 
 .show {
-  display: block;
+  display: flex;
 }
 
 @media (max-width:768px) {
